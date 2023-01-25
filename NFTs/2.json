@@ -1,0 +1,11 @@
+{
+    "name": "AttackMe #2",
+    "description": "You came this far?",
+    "image": "./2.gif",
+    "attributes": [
+      {
+        "trait_type": "Level",
+        "value": "2"
+      }
+    ]
+  }

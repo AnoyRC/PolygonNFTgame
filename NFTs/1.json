@@ -1,0 +1,11 @@
+{
+  "name": "AttackMe #1",
+  "description": "You can't defeat me",
+  "image": "./1.gif",
+  "attributes": [
+    {
+      "trait_type": "Level",
+      "value": "1"
+    }
+  ]
+}

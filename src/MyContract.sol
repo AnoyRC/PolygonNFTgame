@@ -6,9 +6,7 @@ import "@thirdweb-dev/contracts/base/ERC1155LazyMint.sol";
 contract nftAttack is ERC1155LazyMint {
     constructor(
         string memory _name,
-        string memory _symbol,
-        address _royaltyRecipient,
-        uint128 _royaltyBps
+        string memory _symbol
     ) ERC1155LazyMint(_name, _symbol, msg.sender, 0) {}
 
     function burn(
@@ -23,8 +21,16 @@ contract nftAttack is ERC1155LazyMint {
 
         _burn(_owner, _tokenId, _amount);
 
-        if(_tokenId == 0){
+        if(_tokenId == 0 && _amount == 3){
             _mint(_owner, 1, 1, "");
+        }
+
+        if(_tokenId == 1 && _amount == 3){
+            _mint(_owner, 2, 1, "");
+        }
+
+        if(_tokenId == 2 && _amount == 3){
+            _mint(_owner, 0, 1, "");
         }
     }
 }
