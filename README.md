@@ -1,3 +1,8 @@
+The App is live at :
+
+https://polygon-nf-tgame.vercel.app/
+
+
 ## Getting Started
 
 Create a project using this example:
